@@ -1,3 +1,7 @@
+/* LOL below solution works for "Find Pivot Index" --- but soooo poorly optimized ;_; 
+** honestly feel like I might be able to use a conjunction of built-in 
+** array -> lst of subarray/sublist w/ index up to selected indx w/o inclusion & sum
+** stream? */
 class Solution {
     public int pivotIndex(int[] nums) {
         // System.out.println(nums[0]);
