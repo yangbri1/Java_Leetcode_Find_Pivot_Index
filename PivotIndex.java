@@ -19,35 +19,35 @@ class Solution {
         numLst.add(0);
         // ex. [0, 2, 1, -1, 0]
 
-        System.out.println(numLst);
+        // System.out.println(numLst); -------- debugging use
         // iterate thru 'numLst' up to but exclude last elem ...
         // ex. [0, 2, 1]
         for(int i = 0; i < numLst.size() - 2; ++i){
             // System.out.println(numLst.get(i));
             // ex. 0
             leftSum += numLst.get(i);
-            System.out.println(leftSum);
-            System.out.println(".........");
+            // System.out.println(leftSum); -------
+            // System.out.println("........."); ------
             // loop via 'numLst' elems excluding selected ...
             // ex. [1, -1, 0]
             for(int j = i + 2; j < numLst.size(); ++j){
-                System.out.print(numLst.get(j) + ", ");
+                // System.out.print(numLst.get(j) + ", "); -------
                 // add up all the rest of the elems
                 // ex. 1 + (-1) + 0 = 0
                 rightSum += numLst.get(j);
-                System.out.println("rightSum " + rightSum);
+                // System.out.println("rightSum " + rightSum); -----
                 // if(leftSum < rightSum){
                 //     break;
                 // }
             }
 
-            System.out.println();
+            // System.out.println(); --------
 
             // checks if sum on left === sum on right of selected index ...
             if(leftSum == rightSum){
                 // return(i+1);
                 pivotIndex = i;
-                System.out.println("pivot " + pivotIndex);
+                // System.out.println("pivot " + pivotIndex); --------
 
                 // return the selected index as the pivot index
                 return(i);
